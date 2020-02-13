@@ -30,10 +30,13 @@ body{
     color: #6A5F6B;
 }
 .other-item{
-    margin: 0 3em;
+    margin: 0 1.5em; /* use for non-first elements in horizontal lists */
 }
-.edge-item{
-    margin: 0;
+.right-edge-item{
+    margin-left: 1.5em;  /* use for first element in horizontal lists when they are right aligned */
+}
+.left-edge-item{
+    margin-right: 1.5em; /* use for first element in horizontal lists when they are left aligned */
 }
 .content-container{
     /* margin: 0; */
@@ -141,6 +144,8 @@ hr{
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-left: 0;
+    padding-left: 0;
     /* margin-top: 0; */
 }
 .footer-mail{
@@ -150,10 +155,13 @@ hr{
     line-height: 45px;
     text-decoration: underline;
 }
-.footer-links{ /*this is not aligning towards left*/
+.footer-links{ 
     display: flex;
     flex-direction: row;
     list-style: none;
-    align-items: left;
-    justify-content: left;
+    align-content: left;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0; /*ul uses some indentation by default*/
+    padding: 0; /*make padding and margin 0 to avoid indentation in future*/
 }
