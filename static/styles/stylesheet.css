@@ -229,17 +229,8 @@ hr{
     .job-title{
         padding-bottom: 20px;
     }
-    .other-item{
-        margin: 0 0.5em; /* use for non-first elements in horizontal lists */
-    }
-    .right-edge-item{
-        margin-left: 0.5em;  /* use for first element in horizontal lists when they are right aligned */
-    }
-    .left-edge-item{
-        margin-right: 0.5em; /* use for first element in horizontal lists when they are left aligned */
-    }
 }
-@media (max-width: 400px){
+@media (max-width: 480px){
     #header{
         padding: 0 5%;
     }
@@ -254,5 +245,14 @@ hr{
     }
     .footer{
         padding: 0 5%;
+    }
+    .other-item{
+        margin: 0 0.5em; /* use for non-first elements in horizontal lists */
+    }
+    .right-edge-item{
+        margin-left: 0.5em;  /* use for first element in horizontal lists when they are right aligned */
+    }
+    .left-edge-item{
+        margin-right: 0.5em; /* use for first element in horizontal lists when they are left aligned */
     }
 }
