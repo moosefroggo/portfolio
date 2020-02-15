@@ -174,39 +174,22 @@ hr{
 }
 @media (max-width: 1226px){
     #header{
-        padding: 0 5%;
+        padding: 0 10%;
     }
     .content{
-        padding: 0 5%;
+        padding: 0 10%;
     }
     .projects{
-        padding: 0 5%;
+        padding: 0 10%;
     }
     .project-tiles{
-        padding: 0 5%;
+        padding: 0 10%;
     }
     .footer{
-        padding: 0 5%;
+        padding: 0 10%;
     }
 }
-@media (max-width: 930px){
-    .content{
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .heading{
-        padding: 20px 0;
-    }
-    .profile-image{
-        padding-top: 20px;
-        padding-bottom: 40px;
-        width: 100%;
-        object-fit: cover;
-        display: none;
-    }
-    .job-title{
-        padding-bottom: 20px;
-    }
+@media (max-width: 1038px){
     .project-image{
         width: 100%;
         object-fit: cover;
@@ -223,5 +206,53 @@ hr{
     }
     .left-edge-item{
         margin-right: 1em; /* use for first element in horizontal lists when they are left aligned */
+    }
+}
+@media (max-width: 897px){
+    .content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .heading{
+        padding: 20px 0;
+    }
+    .project-group{
+        margin: 20px 0;
+    }
+    .profile-image{
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 100%;
+        object-fit: cover;
+        display: none;
+    }
+    .job-title{
+        padding-bottom: 20px;
+    }
+    .other-item{
+        margin: 0 0.5em; /* use for non-first elements in horizontal lists */
+    }
+    .right-edge-item{
+        margin-left: 0.5em;  /* use for first element in horizontal lists when they are right aligned */
+    }
+    .left-edge-item{
+        margin-right: 0.5em; /* use for first element in horizontal lists when they are left aligned */
+    }
+}
+@media (max-width: 400px){
+    #header{
+        padding: 0 5%;
+    }
+    .content{
+        padding: 0 5%;
+    }
+    .projects{
+        padding: 0 5%;
+    }
+    .project-tiles{
+        padding: 0 5%;
+    }
+    .footer{
+        padding: 0 5%;
     }
 }
