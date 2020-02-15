@@ -246,6 +246,8 @@ hr{
     .footer{
         padding: 0 5%;
     }
+}
+@media (max-width: 400px){
     .other-item{
         margin: 0 0.5em; /* use for non-first elements in horizontal lists */
     }
