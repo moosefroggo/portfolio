@@ -2,6 +2,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #F5F7F5;
     color: #5E657A;
+    margin: 20px 0 0 0;
 }
 h1{
     font-weight: normal;
@@ -54,9 +55,9 @@ a{
 .left-edge-item{
     margin-right: 1.5em; /* use for first element in horizontal lists when they are left aligned */
 }
-#footer-container{
+/* #footer-container{
     background-color: #F5F7F5;
-}
+} */
 .footer{
     padding: 0 16%;
     display: flex;

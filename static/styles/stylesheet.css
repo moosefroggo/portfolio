@@ -19,7 +19,7 @@
     /* flex-wrap: initial; */
 }
 .heading{
-    max-width: 673px;
+    /* max-width: 673px; */ /*Uncomment this line to let text align for the profile image */
     margin: 0;
     /* margin: 40px 0; */
     /* flex: 2 2 0; */
@@ -140,4 +140,7 @@
     }
 }
 @media (max-width: 400px){
+}
+.footer-container{
+    background-color: #F5F7F5;
 }
