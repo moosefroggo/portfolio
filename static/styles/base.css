@@ -92,6 +92,10 @@ a{
     margin: 0; /*ul uses some indentation by default*/
     padding: 0; /*make padding and margin 0 to avoid indentation in future*/
 }
+.main-container{
+    max-width: 1440px;
+    margin: auto;
+}
 @media (max-width: 1226px){
     #header{
         padding: 0 10%;
@@ -132,3 +136,8 @@ a{
         margin-right: 0.5em; /* use for first element in horizontal lists when they are left aligned */
     }
 }
+/* @media (max-width: 1440px){
+    .main-container{
+        max-width: 1440px;
+    }
+} */

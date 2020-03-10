@@ -34,6 +34,7 @@
 }
 .store-button{
     height: 57px;
+    width: auto;
 }
 .app-store-btn{
     margin-right: 1em;
