@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 217px;
+    /* min-height: 217px; */
     /* flex-grow: 2; */
 }
 #projects-container{
@@ -58,14 +58,14 @@
     align-content: left;
     justify-content: space-between;
     background-color: #ECEBF0;
-    min-height: 610px;
+    /* min-height: 610px; */
     /* padding: 2% 0; */
 }
 .projects{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 40px;
     min-height: 56px; /* need to fix height issue, the height should be 56px */
@@ -73,18 +73,32 @@
 }
 .project-tiles{
     padding: 0 16%;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    /*Uncomment the flex code when there are more projects*/
 }
-.project-image{
+.project-image {
+    height: 0;
+    padding: 0; /* remove any pre-existing padding, just in case */
+    padding-bottom: 48.46%;
+    background-image: url("../images/project-simsim.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 2% 0 2% 0;
+}
+/* .project-image{
     height: 381px;
-}
-.project-group{
+    width:100%;
+    object-fit: cover;
+} */
+
+/* .project-group{
     height: 434px;
-    margin: 40px 0;
-}
+    margin: 20px 0;
+} */
 @media (max-width: 1226px){
     .content{
         padding: 0 10%;
@@ -96,14 +110,17 @@
         padding: 0 10%;
     }
 }
-@media (max-width: 1038px){
-    .project-image{
+@media (max-width: 1107px){
+    /* .project-image{
         width: 100%;
         object-fit: cover;
         height: 381px;
-    }
+    } */
     .project-group{
         width: 100%;
+    }
+    .project-tiles{
+        flex-direction: column;
     }
 }
 @media (max-width: 897px){
@@ -126,6 +143,12 @@
     }
     .job-title{
         padding-bottom: 20px;
+    }
+    .project-image{
+        padding: 0; /* remove any pre-existing padding, just in case */
+        padding-bottom: 62.5%;
+        background-size: 100%;
+        background-image: url("../images/project-simsim-small.png");
     }
 }
 @media (max-width: 480px){

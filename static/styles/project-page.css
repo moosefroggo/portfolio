@@ -54,9 +54,19 @@ li{
     font-weight: normal;
     padding: 0;
 }
-.project-image{
-    height: 200px;
+/* .project-image{
+    height: 378px;
     margin-top: 20px;
+} */
+.project-image {
+    height: 0;
+    padding: 0; /* remove any pre-existing padding, just in case */
+    padding-bottom: 48.46%;
+    background-image: url("../images/project-simsim.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 2% 0 2% 0;
 }
 img{
     width: 100%;
@@ -81,7 +91,7 @@ ul{
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 2% 0 2% 0;
-  }
+}
 .footer-container{
     background-color: #ECEBF0;
 }
@@ -103,6 +113,12 @@ ul{
         flex-wrap: wrap;
         /* justify-content: left; */
         /* align-items: flex-end; */
+    }
+    .project-image{
+        padding: 0; /* remove any pre-existing padding, just in case */
+        padding-bottom: 62.5%;
+        background-size: 100%;
+        background-image: url("../images/project-simsim-small.png");
     }
     .store-buttons{
         margin-top: 5%;
